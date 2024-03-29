@@ -1,14 +1,5 @@
 
 
-- per il real HW aumentare la velocità
-- quando si scrive il nome le cancellazioni fanno parte della lunghezza del nome e quindi non posso correggere
-
--storia:
-- CC65 e mmllvmos
-- level compilare
-- grafica da cambiare
-- grafica brutta
-- come compilare vedi wiki 
 
 - add the possibility to player fires more than one missile
 - sistemare nei tiles la parte della trasparenza che è ora magenta
