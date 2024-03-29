@@ -13,7 +13,7 @@ The enemies come in three types:
 
 The program compiles with the file `./compile.sh` for the llmv-mos compiler, see the wiki [LLVM-MOS](https://github.com/paulscottrobson/neo6502-firmware/wiki/Using-LLVM-for-MOS) for some information.
 
-The program compiles with the file `./compile_jspace.sh` for the CC65 compiler, see the [examples] https://github.com/paulscottrobson/neo6502-firmware/tree/main/examples/C for some information.
+The program compiles with the file `./compile_jspace.sh` for the CC65 compiler, see the [examples] (https://github.com/paulscottrobson/neo6502-firmware/tree/main/examples/C) for some information.
 
 There is a significant difference in program speed when using the CC65 compiler, as well as in the size of the executable file. I have not yet verified if everything is due to code optimization by the compilers.
 
