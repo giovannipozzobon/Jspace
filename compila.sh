@@ -1,6 +1,6 @@
 
 # cleanup
-rm -f *.o main.neo main.map neo6502.lib{,.temp}
+rm -f *.o jroad.neo jroad.map neo6502.lib{,.temp}
 
 #compile
 #/Users/giovanni.pozzobon/Documents/GitHub/llvm-mos-sdk/bin/mos-neo6502-clang -Os -v -fverbose-asm -mcpu=mosw65c02 -D__NEO6502__ -mlto-zp=224 \
@@ -10,8 +10,9 @@ rm -f *.o main.neo main.map neo6502.lib{,.temp}
 #main.c utility.c api.c quicksort.c sprite.c -o main.neo 
 #-v -fverbose-asm
 
-/Users/giovanni.pozzobon/Documents/GitHub/llvm-mos-sdk/bin/mos-neo6502-clang -Os  main.c api.c quicksort.c sprite.c -o main.neo 
+#/Users/giovanni.pozzobon/Documents/GitHub/llvm-mos-sdk/bin/mos-neo6502-clang -Os  main.c api.c quicksort.c sprite.c -o main.neo 
+/Users/giovanni.pozzobon/Documents/GitHub/llvm-mos-sdk/bin/mos-neo6502-clang -Os  main.c api.c -o jroad.neo 
 
 
 # launch emulator
-test -f main.neo && ./neo main.neo@800 cold
+test -f jroad.neo && ./neo jroad.neo@800 cold

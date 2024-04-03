@@ -525,3 +525,36 @@ void ClearKeyboardArray(){
 
 } 
  
+
+// Set speed of serial
+void SetSpeed_ProtocolUART(uint32_t baudrate) { 
+
+    while(*API_COMMAND_ADDR) {}  
+    API_PARAMETERS_ADDR[0] = baudrate & 0xFF;                      
+    API_PARAMETERS_ADDR[1] = ((baudrate >> 8)& 0xFF);
+    API_PARAMETERS_ADDR[2] = ((baudrate >> 16)& 0xFF);                    
+    API_PARAMETERS_ADDR[3] = ((baudrate >> 32)& 0xFF);  
+    API_PARAMETERS_ADDR[4] = 0;                      
+    *API_FUNCTION_ADDR  = API_FN_SET_SPEED_PROT;
+    *API_COMMAND_ADDR   = API_GROUP_UEXT_IO;
+    while(*API_COMMAND_ADDR) {}     
+}
+
+// Write byte to UART
+void WritelUART(uint8_t chr) {
+
+    while(*API_COMMAND_ADDR) {}  
+    API_PARAMETERS_ADDR[0] = chr;                                          
+    *API_FUNCTION_ADDR  = API_FN_WRITE_UART;
+    *API_COMMAND_ADDR   = API_GROUP_UEXT_IO;  
+    while(*API_COMMAND_ADDR) {}   
+}
+
+// Write string to UART
+void WriteStringTolUART(char * ptr_str){
+  int i=0;
+  while(ptr_str[i]!= 0) {
+    WritelUART(ptr_str[i]);
+  }
+
+}
