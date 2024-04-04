@@ -62,7 +62,6 @@
 
 //Other
 #define LOG_FILE_CHANNEL 1
-#define SERIAL_SPEED 115200
 
 
 

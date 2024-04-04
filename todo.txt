@@ -1,5 +1,15 @@
 
 
 
+- add the possibility to player fires more than one missile
+- sistemare nei tiles la parte della trasparenza che è ora magenta
+- creare un howto su come creare i level usando il testo e la procedura python
+- Check the center of gravity of enemies's missile and collision routine
 
+level
+- sea 
+- green
+- desert
+- green
+- snow
 

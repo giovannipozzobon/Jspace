@@ -71,7 +71,3 @@ uint8_t API_GROUP_SOUND         = (uint8_t )0x08 ; // API function group ID
 uint8_t API_FN_SOUND_CH_RESET   = (uint8_t )0x02 ; // API function parameter ID
 uint8_t API_FN_PLAY_SOUND       = (uint8_t )0x05 ; // API function ID
 
-// UExt I/O Functions (Group 10)
-uint8_t API_GROUP_UEXT_IO       = (uint8_t )0x0a ; // API function group ID
-uint8_t API_FN_SET_SPEED_PROT   = (uint8_t )0x0f ; // API Set UART Speed and Protocol
-uint8_t API_FN_WRITE_UART       = (uint8_t )0x10 ; // API Write byte to UART

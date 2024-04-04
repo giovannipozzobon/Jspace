@@ -92,9 +92,3 @@ void cputcxy(int sx, int sy, char ch);
 void clrscr();
 
 void ClearKeyboardArray();
-
-void SetSpeed_ProtocolUART(uint32_t baudrate);
-
-void WritelUART(uint8_t chr);
-
-void WriteStringTolUART(char * ptr_str);
